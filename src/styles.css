@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+  font-family: "CutiveMono-Regular";
+  src: url("./assets/fonts/CutiveMono-Regular.ttf");
+}
+
+:root {
+  --primaryColor: #092635;
+  --secondaryColor: #1b4242;
+  --terciaryColor: #5c8374;
+  --forthColor: #9ec8b9;
+  --whiteColor: #f5d7db;
+}
+
+html {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+
+a {
+  color: var(--terciaryColor);
+}
+
+.custom-button {
+  background-color: var(--forthColor);
+  color: var(--primaryColor);
+  padding: 0.6rem 2rem;
+  border-radius: 0.4rem;
+  border: 2px solid var(--primaryColor);
+}
+
+.custom-button:hover {
+  background-color: var(--primaryColor);
+  color: var(--forthColor);
+  cursor: pointer;
+}
+
+.no-border-button {
+  border: none;
+  background: none;
+  padding: 0.6rem 2rem;
+  color: var(--primaryColor);
+}
+
+.no-border-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

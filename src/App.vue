@@ -1,26 +1,23 @@
 <template>
   <link rel="icon" type="image/ico" href="/favicon.jpg" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HeaderBar />
+  <PresentationBox />
+  <p>More content soon!</p>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HeaderBar from "./components/HeaderBar";
+import PresentationBox from "./components/PresentationBox";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    HeaderBar,
+    PresentationBox,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url("./styles.css");
 </style>

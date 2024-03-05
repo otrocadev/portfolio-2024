@@ -1,24 +1,27 @@
-# otroca-dev
+# Repository for 'otroca-dev' by otrocadev
 
-## Project setup
+## This is a project meant to be personalized open code portfolio created with Vue.js. The goal is to make it open source so the code techniques and style used are visible.
+
+## Project setup (to install on your computer)
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### To check it locally and live updates for using on local development
+
 ```
 npm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### When a stable version is developed and merged to main branch, this command builds the Vue app and uploads it to the branch of the domain 'otroca.dev'
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+npm run deploy
+```
