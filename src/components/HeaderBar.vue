@@ -3,7 +3,7 @@
     <h2>OTROCA.DEV</h2>
     <div class="header-navigation">
       <a class="no-border-button">About</a>
-      <a class="no-border-button">Experiencie</a>
+      <a class="no-border-button">Experience</a>
       <a class="no-border-button">Projects</a>
       <a class="no-border-button">Studies</a>
       <a class="no-border-button">Contact</a>

@@ -2,18 +2,20 @@
   <link rel="icon" type="image/ico" href="/favicon.jpg" />
   <HeaderBar />
   <PresentationBox />
-  <p>More content soon!</p>
+  <OverlayButtons />
 </template>
 
 <script>
 import HeaderBar from "./components/HeaderBar";
 import PresentationBox from "./components/PresentationBox";
+import OverlayButtons from "./components/OverlayButtons.vue";
 
 export default {
   name: "App",
   components: {
     HeaderBar,
     PresentationBox,
+    OverlayButtons,
   },
 };
 </script>
