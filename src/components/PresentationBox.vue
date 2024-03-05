@@ -53,7 +53,6 @@ export default {
         start: "-400 bottom",
         end: "30% center",
         scrub: true,
-        markers: true,
       },
       opacity: 0,
       scale: 0,
