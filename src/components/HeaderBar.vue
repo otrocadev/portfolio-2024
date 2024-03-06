@@ -1,6 +1,6 @@
 <template>
   <section class="header-bar">
-    <h2>OTROCA.DEV</h2>
+    <h2>{{ webTitle }}</h2>
     <div class="header-navigation">
       <a
         class="no-border-button"
@@ -16,6 +16,7 @@
 <script>
 export default {
   props: {
+    webTitle: String,
     menuElements: Array,
   },
 };

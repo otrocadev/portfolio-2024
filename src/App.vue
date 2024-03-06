@@ -1,8 +1,16 @@
 <template>
   <link rel="icon" type="image/ico" href="/favicon.jpg" />
-  <HeaderBar v-if="!isMobile" :menuElements="menuElements" />
-  <HeaderMobileBar v-if="isMobile" :menuElements="menuElements" />
-  <PresentationBox />
+  <HeaderBar
+    v-if="!isMobile"
+    :menuElements="menuElements"
+    :webTitle="webTitle"
+  />
+  <HeaderMobileBar
+    v-if="isMobile"
+    :webTitle="webTitle"
+    :menuElements="menuElements"
+  />
+  <PresentationBox :isMobile="isMobile" />
   <!-- <OverlayButtons /> -->
 </template>
 
@@ -23,6 +31,7 @@ export default {
   },
   data() {
     return {
+      webTitle: "OTROCA.DEV",
       menuElements: ["Experience", "Projects", "Studies", "Contact"],
       windowWidth: window.innerWidth,
       isMobile: false,

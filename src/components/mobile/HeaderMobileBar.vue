@@ -1,6 +1,6 @@
 <template>
   <section class="header-bar">
-    <h2>OTROCA.DEV</h2>
+    <h2>{{ webTitle }}</h2>
     <button id="mobile-menu-button" @click="toggleSideMenu()">
       <font-awesome-icon
         icon="bars-staggered"
@@ -23,6 +23,7 @@ import SideMobileMenu from "./SideMobileMenu.vue";
 export default {
   components: { SideMobileMenu },
   props: {
+    webTitle: String,
     menuElements: Array,
   },
 

@@ -6,7 +6,7 @@
       <p class="job-title">[Front-end developer]</p>
     </div>
   </section>
-  <section class="presentation">
+  <section class="presentation" :class="{ presentationMobile: isMobile }">
     <div class="text-card scrolling-text">
       <p>👋🏼 Greetings! I'm Ot, a 24 years old software developer.</p>
       <p>
@@ -50,6 +50,10 @@ import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 export default {
+  props: {
+    isMobile: Boolean,
+  },
+
   mounted() {
     // Name
     //Cursor animation
@@ -67,35 +71,36 @@ export default {
       duration: 1.5,
     });
 
-    // Text presentation //
+    // Text presentation (just animated in desktop)//
+    if (!this.isMobile) {
+      // "mini jumps"
+      let miniJumps = gsap.timeline({
+        delay: 3,
+        repeat: 1,
+      });
+      miniJumps.to(".scrolling-text", {
+        y: -15,
+        duration: 0.2,
+        ease: "sine.inOut",
+      });
+      miniJumps.to(".scrolling-text", {
+        y: 0,
+        duration: 0.2,
+        ease: "sine.inOut",
+      });
 
-    // "mini jumps"
-    let miniJumps = gsap.timeline({
-      delay: 3,
-      repeat: 1,
-    });
-    miniJumps.to(".scrolling-text", {
-      y: -15,
-      duration: 0.2,
-      ease: "sine.inOut",
-    });
-    miniJumps.to(".scrolling-text", {
-      y: 0,
-      duration: 0.2,
-      ease: "sine.inOut",
-    });
-
-    // scrolling
-    gsap.from(".scrolling-text", {
-      scrollTrigger: {
-        trigger: ".scrolling-text",
-        start: "-400 bottom",
-        end: "30% center",
-        scrub: true,
-      },
-      rotation: 80,
-      ease: "sine.out",
-    });
+      // scrolling
+      gsap.from(".scrolling-text", {
+        scrollTrigger: {
+          trigger: ".scrolling-text",
+          start: "-400 bottom",
+          end: "30% center",
+          scrub: true,
+        },
+        rotation: 80,
+        ease: "sine.out",
+      });
+    }
   },
 };
 </script>
@@ -139,6 +144,10 @@ p {
   padding: 6rem clamp(2rem, 10rem, 12rem);
   display: grid;
   place-content: center;
+}
+
+.presentationMobile {
+  padding: 3rem;
 }
 
 .text-card {
