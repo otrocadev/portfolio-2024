@@ -2,16 +2,24 @@
   <section class="header-bar">
     <h2>OTROCA.DEV</h2>
     <div class="header-navigation">
-      <a class="no-border-button">About</a>
-      <a class="no-border-button">Experience</a>
-      <a class="no-border-button">Projects</a>
-      <a class="no-border-button">Studies</a>
-      <a class="no-border-button">Contact</a>
+      <a
+        class="no-border-button"
+        v-for="(menuElement, index) in menuElements"
+        :key="index"
+      >
+        {{ menuElement }}</a
+      >
     </div>
   </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    menuElements: Array,
+  },
+};
+</script>
 
 <style scoped>
 .header-bar {

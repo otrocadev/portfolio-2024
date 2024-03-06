@@ -63,7 +63,8 @@ export default {
     // Name text writting animation
     gsap.to(".text", {
       text: "Ot Roca",
-      duration: 2,
+      delay: 1,
+      duration: 1.5,
     });
 
     // Text presentation //
@@ -114,6 +115,7 @@ p {
   font-weight: 600;
   font-family: "CutiveMono-Regular", Arial, sans-serif;
 }
+
 .presentation-title {
   height: 80vh;
   padding: 1rem clamp(8rem, 10rem, 12rem);
@@ -134,14 +136,14 @@ p {
 .presentation {
   background: var(--forthColor);
   height: fit-content;
-  padding: 6rem clamp(8rem, 10rem, 12rem);
+  padding: 6rem clamp(2rem, 10rem, 12rem);
   display: grid;
   place-content: center;
 }
 
 .text-card {
   background-color: var(--whiteColor);
-  padding: 3rem;
+  padding: 2rem;
   border: 3px solid var(--primaryColor);
   border-radius: 0.8rem;
 }

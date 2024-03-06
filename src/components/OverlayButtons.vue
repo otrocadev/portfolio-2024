@@ -2,6 +2,10 @@
   <button onclick="scrollToTop()" class="homeButton">Return to Top</button>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "OverlayButtons",
+};
+</script>
 
 <style scoped></style>
