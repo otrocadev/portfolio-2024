@@ -57,6 +57,7 @@ export default {
   mounted() {
     // Name
     //Cursor animation
+
     gsap.to(".cursor", {
       opacity: 0,
       ease: "power2.inOut",
@@ -73,6 +74,7 @@ export default {
 
     // Text presentation (just animated in desktop)//
     if (!this.isMobile) {
+      console.log(this.isMobile);
       // "mini jumps"
       let miniJumps = gsap.timeline({
         delay: 3,

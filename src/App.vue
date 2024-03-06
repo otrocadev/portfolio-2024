@@ -37,10 +37,13 @@ export default {
       isMobile: false,
     };
   },
+
+  beforeMount() {
+    this.selectIfMobile();
+  },
+
   // Check if the window resizes:
   mounted() {
-    this.selectIfMobile();
-
     this.$nextTick(() => {
       window.addEventListener("resize", this.onResize);
     });
