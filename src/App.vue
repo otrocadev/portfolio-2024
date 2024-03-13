@@ -32,7 +32,13 @@ export default {
   data() {
     return {
       webTitle: "OTROCA.DEV",
-      menuElements: ["Experience", "Projects", "Studies", "Contact"],
+      menuElements: [
+        {
+          name: "Download my CV!",
+          icon: ["fas", "file-arrow-down"],
+          url: "otroca.dev/CV_OtRoca_en(2024).pdf",
+        },
+      ],
       windowWidth: window.innerWidth,
       isMobile: false,
     };

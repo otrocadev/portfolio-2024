@@ -3,7 +3,7 @@
     <h2>{{ webTitle }}</h2>
     <button id="mobile-menu-button" @click="toggleSideMenu()">
       <font-awesome-icon
-        icon="bars-staggered"
+        :icon="['fas', 'bars-staggered']"
         flip="horizontal"
         size="lg"
         style="color: var(--primaryColor)"

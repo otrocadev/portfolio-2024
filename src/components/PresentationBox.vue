@@ -4,8 +4,30 @@
       <p class="hi-my-name">HI, MY NAME IS</p>
       <h1><span class="text"></span> <span class="cursor">_</span></h1>
       <p class="job-title">[Front-end developer]</p>
+      <div id="social-logos">
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/otrocadev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" color="inherit" />
+        </a>
+        <a
+          class="social-link"
+          href="https://github.com/otrocadev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <font-awesome-icon :icon="['fab', 'square-github']" />
+        </a>
+        <a class="social-link" href="mailto:otrocat@gmail.com">
+          <font-awesome-icon :icon="['fas', 'envelope']"
+        /></a>
+      </div>
     </div>
   </section>
+
   <section class="presentation" :class="{ presentationMobile: isMobile }">
     <div class="text-card scrolling-text">
       <p>👋🏼 Greetings! I'm Ot, a 24 years old software developer.</p>
@@ -74,7 +96,6 @@ export default {
 
     // Text presentation (just animated in desktop)//
     if (!this.isMobile) {
-      console.log(this.isMobile);
       // "mini jumps"
       let miniJumps = gsap.timeline({
         delay: 3,
@@ -138,6 +159,20 @@ p {
 .job-title {
   margin-top: 0;
   text-align: center;
+}
+
+#social-logos {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-link {
+  color: var(--primaryColor);
+}
+
+.social-link:hover {
+  scale: 110%;
 }
 
 .presentation {

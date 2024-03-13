@@ -3,19 +3,27 @@
     <div class="side-menu">
       <button id="close-menu-button" @click="toggleSideMenu()">
         <font-awesome-icon
-          icon="chevron-right"
+          :icon="['fas', 'chevron-right']"
           size="lg"
           style="color: var(--primaryColor)"
         />
       </button>
       <nav class="menuElements">
-        <a
+        <a class="no-border-button" :href="menuElements[0].url">
+          <font-awesome-icon
+            :icon="[menuElements[0].icon[0], menuElements[0].icon[1]]"
+            color="inherit"
+            download
+          />
+          {{ menuElements[0].name }}</a
+        >
+        <!-- <a
           class="no-border-button"
           v-for="(menuElement, index) in menuElements"
           :key="index"
         >
           {{ menuElement }}</a
-        >
+        > -->
       </nav>
     </div>
   </div>

@@ -12,7 +12,7 @@
   --secondaryColor: #1b4242;
   --terciaryColor: #5c8374;
   --forthColor: #9ec8b9;
-  --whiteColor: #f5d7db;
+  --whiteColor: #f8f7f4;
 }
 
 html {
@@ -33,9 +33,10 @@ a {
 .custom-button {
   background-color: var(--forthColor);
   color: var(--primaryColor);
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 1rem;
   border-radius: 0.4rem;
   border: 2px solid var(--primaryColor);
+  text-decoration: none;
 }
 
 .custom-button:hover {
@@ -49,9 +50,9 @@ a {
   background: none;
   padding: 0.6rem 2rem;
   color: var(--primaryColor);
+  text-decoration: none;
 }
 
 .no-border-button:hover {
-  text-decoration: underline;
   cursor: pointer;
 }
