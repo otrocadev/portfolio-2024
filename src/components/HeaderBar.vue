@@ -3,11 +3,15 @@
     <h2>{{ webTitle }}</h2>
     <div class="header-navigation">
       <!-- Provisionaly while not having routing set up -->
-      <a class="custom-button" :href="menuElements[0].url">
+      <a
+        class="custom-button"
+        :href="menuElements[0].url"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <font-awesome-icon
           :icon="[menuElements[0].icon[0], menuElements[0].icon[1]]"
           color="inherit"
-          download
         />
         {{ menuElements[0].name }}</a
       >
