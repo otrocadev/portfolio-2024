@@ -36,7 +36,7 @@ export default {
         {
           name: "Download my CV!",
           icon: ["fas", "file-arrow-down"],
-          url: "otroca.dev/CV_OtRoca_en(2024).pdf",
+          url: "docs/CV_OtRoca_en(2024).pdf",
         },
       ],
       windowWidth: window.innerWidth,
