@@ -16,7 +16,9 @@
 }
 
 html {
-  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-family: "CutiveMono-Regular", Inter, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -26,11 +28,26 @@ body {
   color: var(--primaryColor);
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
 a {
   color: var(--terciaryColor);
 }
 
 .custom-button {
+  font-family: Inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 700;
   background-color: var(--forthColor);
   color: var(--primaryColor);
   padding: 0.6rem 1rem;

@@ -11,6 +11,7 @@
     :menuElements="menuElements"
   />
   <PresentationBox :isMobile="isMobile" />
+  <previous-jobs />
   <!-- <OverlayButtons /> -->
 </template>
 
@@ -19,6 +20,7 @@ import HeaderBar from "./components/HeaderBar";
 import HeaderMobileBar from "./components/mobile/HeaderMobileBar";
 
 import PresentationBox from "./components/PresentationBox";
+import PreviousJobs from "./components/PreviousJobs";
 // import OverlayButtons from "./components/OverlayButtons.vue";
 
 export default {
@@ -27,6 +29,7 @@ export default {
     HeaderBar,
     HeaderMobileBar,
     PresentationBox,
+    PreviousJobs,
     // OverlayButtons,
   },
   data() {

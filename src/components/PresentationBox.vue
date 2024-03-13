@@ -55,7 +55,7 @@
         <i>
           "It is obvious that a senior will for sure teach a lot of things to a
           Junior, but what is actually crazy, is how a senior can learn a lot of
-          new things from a junior. It is a symbiosis that creates a really
+          new things from a junior. It is a symbiosis that creates really
           special synergies."
         </i>
       </p>
@@ -130,6 +130,7 @@ export default {
 
 <style lang="css" scoped>
 h1 {
+  font-family: Inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   width: 5em;
   font-size: clamp(3rem, 4rem, 6rem);
   margin: 1rem 0;
@@ -139,7 +140,6 @@ h1 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 600;
   font-family: "CutiveMono-Regular", Arial, sans-serif;
 }

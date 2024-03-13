@@ -51,6 +51,7 @@ export default {
 
 h2 {
   margin: 2rem;
+  font-family: Inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .header-navigation {
