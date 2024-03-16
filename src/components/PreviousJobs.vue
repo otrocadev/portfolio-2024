@@ -1,13 +1,15 @@
 <template>
-  <section>
+  <section :class="{ sctionMobile: isMobile }">
     <h2>MY EXPERIENCE</h2>
     <div class="experience">
+      <h3 class="job-title">WALLBOX CHARGERS | [Full-Stack]</h3>
+      <!-- Image only loads full size on descktop -->
       <img
+        v-if="!isMobile"
         class="job-img"
         src="../assets/img/first_day_wallbox.png"
         alt="Ot Roca's First day at Wallbox Chargers"
       />
-      <h3 class="job-title">WALLBOX CHARGERS | [Full-Stack]</h3>
       <div class="job-text">
         <p>
           Let me walk you through what I've been up to with the Wallbox Digital
@@ -57,15 +59,32 @@
         </p>
       </div>
     </div>
+    <!-- If mobile site charges a smaller image to save data and fastest response -->
+    <img
+      v-if="isMobile"
+      class="job-img-mobile"
+      src="../assets/img/first_day_wallbox_mobile.png"
+      alt="Ot Roca's First day at Wallbox Chargers"
+    />
   </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    isMobile: Boolean,
+  },
+};
+</script>
 
 <style lang="css" scoped>
 section {
   background: var(--whiteColor);
   padding: 5rem 8rem;
+}
+
+.sctionMobile {
+  padding: 1rem 2rem;
 }
 
 h2 {
@@ -80,5 +99,9 @@ h3 {
   float: right;
   margin: auto;
   width: 40%;
+}
+
+.job-img-mobile {
+  width: 100%;
 }
 </style>

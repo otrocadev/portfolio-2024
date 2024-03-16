@@ -1,26 +1,26 @@
 <template>
   <link rel="icon" type="image/ico" href="/favicon.jpg" />
-  <HeaderBar
+  <header-bar
     v-if="!isMobile"
     :menuElements="menuElements"
     :webTitle="webTitle"
   />
-  <HeaderMobileBar
+  <header-mobile-bar
     v-if="isMobile"
     :webTitle="webTitle"
     :menuElements="menuElements"
   />
-  <PresentationBox :isMobile="isMobile" />
-  <previous-jobs />
+  <presentation-box :isMobile="isMobile" />
+  <previous-jobs :isMobile="isMobile" />
   <!-- <OverlayButtons /> -->
 </template>
 
 <script>
-import HeaderBar from "./components/HeaderBar";
-import HeaderMobileBar from "./components/mobile/HeaderMobileBar";
+import HeaderBar from "./components/HeaderBar.vue";
+import HeaderMobileBar from "./components/mobile/HeaderMobileBar.vue";
 
-import PresentationBox from "./components/PresentationBox";
-import PreviousJobs from "./components/PreviousJobs";
+import PresentationBox from "./components/PresentationBox.vue";
+import PreviousJobs from "./components/PreviousJobs.vue";
 // import OverlayButtons from "./components/OverlayButtons.vue";
 
 export default {

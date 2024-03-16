@@ -43,6 +43,7 @@ export default {
 
 <style scoped>
 .header-bar {
+  font-family: Inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 0;
   padding: 1rem;
   display: flex;

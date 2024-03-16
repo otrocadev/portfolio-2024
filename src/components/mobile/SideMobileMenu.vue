@@ -86,6 +86,6 @@ export default {
 .menuElements {
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 </style>

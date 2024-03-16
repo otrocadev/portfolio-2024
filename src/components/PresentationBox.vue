@@ -132,7 +132,7 @@ export default {
 h1 {
   font-family: Inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   width: 5em;
-  font-size: clamp(3rem, 4rem, 6rem);
+  font-size: clamp(2rem, 3rem, 4rem);
   margin: 1rem 0;
   padding: 0.2rem 1rem;
   border: 3px solid var(--primaryColor);
