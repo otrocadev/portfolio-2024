@@ -1,4 +1,4 @@
-# Repository for 'otroca-dev' by otrocadev
+# Repository for 'otrocadev.com' by otrocadev
 
 ## This is a project meant to be personalized open code portfolio created with Vue.js. The goal is to make it open source so the code techniques and style used are visible.
 
