@@ -98,7 +98,7 @@ h3 {
 .job-img {
   float: right;
   margin: auto;
-  width: 40%;
+  width: 35rem;
 }
 
 .job-img-mobile {
