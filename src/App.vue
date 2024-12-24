@@ -16,15 +16,15 @@
 </template>
 
 <script>
-import HeaderBar from "./components/HeaderBar.vue";
-import HeaderMobileBar from "./components/mobile/HeaderMobileBar.vue";
+import HeaderBar from './components/HeaderBar.vue'
+import HeaderMobileBar from './components/mobile/HeaderMobileBar.vue'
 
-import PresentationBox from "./components/PresentationBox.vue";
-import PreviousJobs from "./components/PreviousJobs.vue";
+import PresentationBox from './components/PresentationBox.vue'
+import PreviousJobs from './components/PreviousJobs.vue'
 // import OverlayButtons from "./components/OverlayButtons.vue";
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     HeaderBar,
     HeaderMobileBar,
@@ -34,50 +34,50 @@ export default {
   },
   data() {
     return {
-      webTitle: "OTROCA.DEV",
+      webTitle: 'OTROCA.DEV',
       menuElements: [
         {
-          name: "Download my CV!",
-          icon: ["fas", "file-arrow-down"],
-          url: "docs/CV_OtRoca_en(2024).pdf",
+          name: 'Download my CV!',
+          icon: ['fas', 'file-arrow-down'],
+          url: 'docs/OtRocaCVs.pdf',
         },
       ],
       windowWidth: window.innerWidth,
       isMobile: false,
-    };
+    }
   },
 
   beforeMount() {
-    this.selectIfMobile();
+    this.selectIfMobile()
   },
 
   // Check if the window resizes:
   mounted() {
     this.$nextTick(() => {
-      window.addEventListener("resize", this.onResize);
-    });
+      window.addEventListener('resize', this.onResize)
+    })
   },
   beforeUnmount() {
-    window.removeEventListener("resize", this.onResize);
+    window.removeEventListener('resize', this.onResize)
   },
 
   methods: {
     selectIfMobile() {
       // changes isMobile variable
       if (this.windowWidth <= 1024) {
-        this.isMobile = true;
-        return;
+        this.isMobile = true
+        return
       }
-      this.isMobile = false;
+      this.isMobile = false
     },
     onResize() {
-      this.windowWidth = window.innerWidth;
-      this.selectIfMobile();
+      this.windowWidth = window.innerWidth
+      this.selectIfMobile()
     },
   },
-};
+}
 </script>
 
 <style>
-@import url("./styles.css");
+@import url('./styles.css');
 </style>
